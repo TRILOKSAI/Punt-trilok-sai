@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor with Font Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><b>A SIMPLE TEXT EDITOR FOR EASY AND HASSLE FREE EDITING!</b></h1>
+    <div class="editor-container">
+        <div class="controls">
+            <label for="font-family">Font Family:</label>
+            <select id="font-family"></select>
+            
+            <label for="font-weight">Font Weight:</label>
+            <select id="font-weight"></select>
+            
+            <label for="italic-toggle">Italic:</label>
+            <input type="range" id="italic-toggle" min="0" max="1" step="1">
+        </div>
+        <textarea id="editor" rows="10" cols="80"></textarea>
+        
+        <!-- Add Reset and Save buttons -->
+        <div class="buttons">
+            <button id="reset-button">Reset</button>
+            <button id="save-button">Save</button>
+        </div>
+    </div>
+</body>
+</html>
